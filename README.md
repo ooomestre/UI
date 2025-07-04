@@ -698,7 +698,8 @@ spawn(function()
         end
     end
 end)
-        
+
+CheckQuest()
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
