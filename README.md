@@ -39,3 +39,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Section Example")
+Section:Set("Section Example")
+local Divider = Tab:CreateDivider()
+Divider:Set(false) -- Whether the divider's visibility is to be set to true or false.
