@@ -38,8 +38,67 @@ local Window = Rayfield:CreateWindow({
    
 })
 
-local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
-local Section = Tab:CreateSection("Section Example")
-Section:Set("Section Example")
+local Tab = Window:CreateTab("Level", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Section Example",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+Section:Set("Farm")
+
+local Toggle = Tab:CreateToggle({
+   Name = "Toggle Example",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+
+local Tab = Window:CreateTab("Mastery", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Section Example",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+Section:Set("Farm")
+
+local Toggle = Tab:CreateToggle({
+   Name = "Toggle Example",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+
+local Divider = Tab:CreateDivider()
+Divider:Set(false) -- Whether the divider's visibility is to be set to true or false.
+
+local Tab = Window:CreateTab("Money", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Section Example",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+Section:Set("Farm")
+
+local Toggle = Tab:CreateToggle({
+   Name = "Toggle Example",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+
+local Divider = Tab:CreateDivider()
+Divider:Set(false) -- Whether the divider's visibility is to be set to true or false.
+
+local Tab = Window:CreateTab("Fruit", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Section Example",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+Section:Set("Farm")
+
+local Toggle = Tab:CreateToggle({
+   Name = "Toggle Example",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+
 local Divider = Tab:CreateDivider()
 Divider:Set(false) -- Whether the divider's visibility is to be set to true or false.
