@@ -654,7 +654,7 @@ function AutoFarm()
 end
 
 spawn(AutoFarm)
-
+print("oi")
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
